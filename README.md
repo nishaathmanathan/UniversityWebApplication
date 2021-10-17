@@ -2,7 +2,7 @@
 ###################################
 #  Run book for the current code  #
 ###################################
-
+Please read this document to get overview of this application ands its implementation.
 This solution has 2 tables.
 1.Student table to track student details 
 2.Roles table that can maintain the roles of each users including students,teachers and admin.
