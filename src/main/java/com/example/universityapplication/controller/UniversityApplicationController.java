@@ -129,6 +129,10 @@ public class UniversityApplicationController {
 		} else if (!role.equalsIgnoreCase("teacher")) {
 			return new ResponseEntity<>("User " + name + " does not have teacher role to add new user", HttpStatus.OK);
 		}
+		String userPresence = studentRepositoryImplementation.getRole(studentData.getStudentName());
+		if (userPresence == null) {
+			return new ResponseEntity<>("User " + studentData.getStudentName() + " is not present in University", HttpStatus.OK);
+		}
 		studentRepositoryImplementation.updateStudentGrade(studentData, name);
 		return new ResponseEntity<>(
 				studentData.getStudentName() + " Student grade and result updated in to University ", HttpStatus.OK);

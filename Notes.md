@@ -27,6 +27,9 @@ An authentication can added in future using the following steps:
 1. adding security core dependency in pom.xml
 2. Creating configuration for security and restricting the access for each end points based on the roles in the database
 
+Loggers need to be implemented for method starting and ending.
+Exception handling need to be done for certain functions
+
 Note: Please refer the README.md for the current implementation details.
 
 

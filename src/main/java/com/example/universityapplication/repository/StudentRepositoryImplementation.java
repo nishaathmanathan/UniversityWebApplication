@@ -1,4 +1,3 @@
-
 package com.example.universityapplication.repository;
 
 import javax.persistence.EntityManager;
